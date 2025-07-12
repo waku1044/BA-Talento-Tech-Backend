@@ -7,8 +7,8 @@ router.get("/", allProducts);
 
 router.get("/:id", productoPorId);
 
-router.post('/crear',crearProducto);
+router.post('/crear', crearProducto);
 
-router.delete('/:id', eliminarProducto)
+router.delete('/:id', eliminarProducto);
 
 export default router;

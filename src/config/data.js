@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import 'dotenv/config'
+import 'dotenv/config';
+
 // Cargar las variables de entorno
 const firebaseConfig = {
   apiKey: process.env.API_KEY,

@@ -5,7 +5,7 @@ export const productColection = collection(db,'productos')
 
 class Producto{
     // static count = 0
-    constructor(categoria,nombre,precio,descripcion,stock){
+    constructor(categoria, nombre,precio,descripcion,stock){
         // Producto.count++
         // this.id = Producto.count
         this.categoria = categoria
