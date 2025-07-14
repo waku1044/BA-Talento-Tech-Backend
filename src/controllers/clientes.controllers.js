@@ -1,13 +1,15 @@
 import { generateToken } from "../utils/auth.js";
 
+
 const default_user = {
   id: 1,
   email: "walter@hotmail.com",
-  pass: "123456",
+  pass: '123456',
 };
 
 export const login =  async(req, res) => {
   const { email, pass } = req.body;
+  console.log('edefault',default_user.pass)
   try {
     
     if (!email || !pass) res.status(200).json({message:"Debe completar las credenciales."});
