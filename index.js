@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import bodyParser from 'body-parser';
 import  dotenv  from 'dotenv';
 import routerProductos from './src/routes/productos.routes.js';
 import routerCliente from './src/routes/clientes.routes.js';
@@ -13,7 +12,6 @@ const puerto = process.env.PORT || 3000;
 
 // Configuraciones del servidor
 app.use(cors());
-// app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
