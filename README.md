@@ -11,7 +11,7 @@ api/producto/4
 * Crear producto en body con siguiente  enpoint y modelo
 api/producto/crear
 categoria,
-titulo,
+nombre,
 descripcion,
 precio,
 stock
