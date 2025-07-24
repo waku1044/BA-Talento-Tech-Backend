@@ -43,7 +43,7 @@ export const crearProducto = async(req, res) => {
           payload: nuevoProducto,
         });
     } else {
-      res.status(200).json({ message: "No se creo el producto por falta de datos o datos incorrectos." });
+      res.status(400).json({ message: "No se creo el producto." });
     }
   } catch (error) {
     res
@@ -62,7 +62,7 @@ export const productoPorId = async(req, res) => {
       .json({ message: "Producto con id encontrado", payload: producto });
     return producto;
   } else {
-    res.status(200).json({ message: "No hay producto con ese ID." });
+    res.status(404).json({ message: "No se encontro el producto." });
   }
 };
 
@@ -79,6 +79,6 @@ export const eliminarProducto = async(req, res) => {
         payload: productoAEliminar,
       });
   } else {
-    res.status(200).json({ message: "No se encontro el producto" });
+    res.status(404).json({ message: "No se encontro el producto" });
   }
 };
